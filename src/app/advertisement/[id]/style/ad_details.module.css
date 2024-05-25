@@ -1,0 +1,286 @@
+.adTopPiece {
+    width: 80%;
+    height: min-content;
+    display: flex;
+    gap: 34px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.adBottomPiece {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.adDetailsContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 52px;
+    margin: 5vh auto;
+}
+
+.adGalleryWrapper {
+    flex: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: var(--White);
+    box-shadow: var(--Main-Shadow);
+}
+
+.mainPic {
+    border-radius: 30px 30px 0 0;
+    width: 600px;
+    height: 500px;
+}
+
+.planPic {
+    width: 600px;
+    height: 312px;
+    border-radius: 0 0 30px 30px;
+}
+
+.imgSlider {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 40px;
+    background: var(--White);
+}
+
+.sliderImageCard {
+    width: 197px;
+    height: 186px;
+    border-radius: 24px;
+}
+
+.descriptionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-evenly;
+    gap: 35px;
+}
+
+.descriptionHeader {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.descriptionBody {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.descriptionItem {
+    display: flex;
+    justify-content: center;
+    direction: rtl;
+    align-items: center;
+    gap: 13px;
+}
+
+.descriptionItemText {
+    color: var(--Black);
+    text-align: right;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.adDetailsWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-self: stretch;
+}
+
+.adVerificationTrustBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 17px;
+    gap: 7px;
+    border-radius: 29px;
+    background: var(--White);
+    cursor: pointer;
+    box-shadow: var(--Main-Shadow);
+    transition: transform 0.3s ease;
+}
+
+.adVerificationTrustBox:hover {
+    transform: scale(0.99);
+}
+
+.adVerificationTrustText {
+    color: var(--Black);
+    text-align: right;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.adVerificationTrustButton {
+    display: flex;
+    padding: 8px 16px 8px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border-radius: 18px;
+    background: var(--Blue-Primary);
+}
+
+.adVerificationTrustButtonText {
+    color: var(--White);
+    text-align: right;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.adTitlesWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.adTitle {
+    color: var(--Black);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    direction: rtl;
+}
+
+.adSubtitle {
+    color: var(--Black);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.adActionBarContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.adCommunicationWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.primaryButton {
+    border-radius: 20px;
+    background-color: var(--Blue-Primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 39px;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.primaryBtnText {
+    color: var(--White);
+    font-size: 20px;
+}
+
+.primaryBtnIcon {
+    width: 40px;
+    height: 40px;
+}
+
+.btnChat {
+    background-color: var(--White);
+    gap: 8px;
+    flex: 1 0 0;
+}
+
+.btnChat .primaryBtnText {
+    color: var(--Black);
+}
+
+.adShareWrapper {
+    display: flex;
+    padding: 0px 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.adShareBtn {
+    cursor: pointer;
+}
+
+.adDetailsListTileWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    align-self: stretch;
+}
+
+.detailsListTile {
+    display: flex;
+    width: 100%;
+    padding: 12px;
+    justify-content: flex-end;
+    align-items: center;
+    align-self: stretch;
+    gap: 8px;
+    border-radius: 20px;
+    background: var(--White);
+}
+
+.listTileBody,
+.listTileTitle {
+    direction: rtl;
+    color: var(--Black);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.adFeaturesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.featuresWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    gap: 20px;
+}
+
+.featureBox {
+    display: flex;
+    padding: 12px 0px;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    border-radius: 30px;
+    background: var(--White);
+}
