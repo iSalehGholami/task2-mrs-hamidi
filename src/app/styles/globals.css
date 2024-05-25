@@ -1,0 +1,52 @@
+/* Importing font definitions */
+@font-face {
+  font-family: 'IranSansX';
+  src: url('/assets/fonts/IranSansX-Regular.woff') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IranSansX';
+  src: url('/assets/fonts/IranSansX-Bold.woff') format('truetype');
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'IranSansXFaNum';
+  src: url('/assets/fonts/IranSansXFaNum-Regular.woff') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IranSansXFaNum';
+  src: url('/assets/fonts/IranSansX-Bold.woff') format('truetype');
+  font-weight: bold;
+  font-style: bold;
+}
+
+/* Global Variables */
+:root {
+  /* Colors */
+  --Shadow-Black: rgba(0, 0, 0, 0.13);
+  --White: #fff;
+  --Blue-Primary: #008FFF;
+  --Pale-White: #F3F3F3;
+  --Black: #000;
+  /* Shadows */
+  --Main-Shadow: 6px 8px 24px 0px var(--Shadow-Black);
+} 
+
+* {
+  /* Default CSS Configuration */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--Pale-White);
+  font-family: 'IranSansX';
+}
