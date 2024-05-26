@@ -1,9 +1,13 @@
+import MainLayout from "@/view/layout/MainLayout";
 import styles from "./styles/page.module.css";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <h3>Index Page</h3>
-    </main>
+    <MainLayout>
+      <center>
+        <h2>Main Page</h2>
+        <h5>Comingsoon</h5>
+      </center>
+    </MainLayout>
   );
 }
