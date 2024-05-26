@@ -2,7 +2,7 @@
 @font-face {
   font-family: 'IranSansX';
   src: url('/assets/fonts/IranSansX-Regular.woff') format('truetype');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -33,11 +33,17 @@
   --Shadow-Black: rgba(0, 0, 0, 0.13);
   --White: #fff;
   --Blue-Primary: #008FFF;
+  --Blue-500: #1580DF;
   --Pale-White: #F3F3F3;
   --Black: #000;
+  --Grey: #AEAEAE;
+  --Dove-Grey: #666666;
+  --Light-Grey: #D8D8D8;
   /* Shadows */
   --Main-Shadow: 6px 8px 24px 0px var(--Shadow-Black);
-} 
+}
+
+/* Main selectors */
 
 * {
   /* Default CSS Configuration */
@@ -49,4 +55,10 @@
 body {
   background: var(--Pale-White);
   font-family: 'IranSansX';
+}
+
+/* Defining styles */
+
+.text-Blue-Primary {
+  color: var(--Blue-Primary);
 }
