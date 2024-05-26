@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from 'next/image';
 import styles from './style/ad_details.module.css';
+import { InfoCircle } from 'iconsax-react';
 
 function page({ params }: any) {
     const id = params.id;
@@ -97,28 +98,28 @@ function page({ params }: any) {
                     <div className={styles.descriptionHeader}>توضیحات</div>
                     <div className={styles.descriptionBody}>
                         <div className={styles.descriptionItem}>
-                            <img src="/assets/icons/eclipse.svg" className="description-item-icon" />
+                            <InfoCircle className="text-Blue-Primary" />
                             <div className={styles.descriptionItemText}>
                                 3 خوابه 1 خواب مستر
                             </div>
                         </div>
 
                         <div className={styles.descriptionItem}>
-                            <img src="/assets/icons/eclipse.svg" className="description-item-icon" />
+                            <InfoCircle className="text-Blue-Primary" />
                             <div className={styles.descriptionItemText}>
                                 3 خوابه 1 خواب مستر
                             </div>
                         </div>
 
                         <div className={styles.descriptionItem}>
-                            <img src="/assets/icons/eclipse.svg" className="description-item-icon" />
+                            <InfoCircle className="text-Blue-Primary" />
                             <div className={styles.descriptionItemText}>
                                 3 خوابه 1 خواب مستر
                             </div>
                         </div>
 
                         <div className={styles.descriptionItem}>
-                            <img src="/assets/icons/eclipse.svg" className="description-item-icon" />
+                            <InfoCircle className="text-Blue-Primary" />
                             <div className={styles.descriptionItemText}>
                                 3 خوابه 1 خواب مستر
                             </div>
