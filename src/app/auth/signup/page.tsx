@@ -4,7 +4,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import {
-    Minus, User, Call,Edit2,Google,Lock
+    Minus, User, Call, Edit2, Google, Lock
 } from "iconsax-react";
 
 import lock from "/public/assets/images/lock.png";
@@ -30,14 +30,11 @@ function Signup() {
                 <form className={styles.formContainer}>
                     <div className={styles.infoPiece}>
                         <div className={styles.smartvest_description}>
-                            <div className={styles.description}>امن</div>
                             <div className={styles.smartvest}>اسمارت وست پلتفرمی <span className={styles.safeText}>امن</span></div>
                         </div>
-                        <div className={styles.plan}>
-                            <div className={styles.shape}>
-                                <Image src={lock} className={styles.lockImage} alt="Lock Icon" />
-                            </div>
-                            <div className={styles.icon_plan}></div>
+                        <div className={styles.lockContainer}>
+                            <div className={styles.lockShape}></div>
+                            <Image src={lock} className={styles.lockImage} alt="Lock Icon" />
                         </div>
                         <div className={styles.linksWrapper}>
                             <div className={styles.button_text}>پشتیبانی</div>

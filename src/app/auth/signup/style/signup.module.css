@@ -9,6 +9,7 @@
 .formContainer {
     display: flex;
     width: 60%;
+    height: 600px;
     justify-content: space-between;
     align-items: center;
     gap: 82px;
@@ -156,7 +157,7 @@
     align-self: stretch;
 }
 
-.description {
+.safeText {
     color: var(--Blue-Primary, #008FFF);
     font-size: 24px;
     font-weight: 600;
@@ -176,12 +177,10 @@
 
 .button_text {
     color: #000;
-    font-family: Inter;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    font-family: IRANSansX;
     cursor: pointer;
 
 }
@@ -196,15 +195,35 @@
 }
 
 .lockImage {
-    width: 90%;
-    height: 90%;
+    position: absolute;
+    width: 50%;
+    height: 50%;
     align-items: center;
+    z-index: 1 !important;
+    flex-shrink: 0;
 }
 
-.shape {
-    border-radius: 316px;
-    opacity: 0.4;
+.lockShape {
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+
     background: var(--White, #FFF);
-    box-shadow: -40px 21px 130px 1px rgba(0, 0, 0, 0.25);
-    filter: blur(7px);
+    opacity: 0.4;
+    box-shadow: -40px 21px 129.9px 1px rgba(0, 0, 0, 0.25);
+    filter: blur(6.949999809265137px);
+    flex-shrink: 0;
+    z-index: 0 !important;
+}
+
+.lockContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 100%;
+    width: 75%;
+    height: 65%;
+
+    background: var(--White, #FFF);
 }
