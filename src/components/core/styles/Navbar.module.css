@@ -1,0 +1,112 @@
+.navbarContainer {
+    width: 100%;
+    padding: 16px 80px;
+    background: var(--White);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actionsWrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.linksWrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.circleBtn {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    gap: 8px;
+
+    border-radius: 30px;
+    border: 1px solid #D8D8D8;
+}
+
+.circleBtnIcon {
+    color: var(--Grey);
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.newAdBtn {
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 30px;
+    cursor: pointer;
+    background: var(--Blue-Primary);
+    color: var(--White);
+}
+
+.faqBtn {
+    display: flex;
+    padding: 8px 0px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 30px;
+    color: var(--Dove-Grey);
+}
+
+.languageSelectorBtn {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 30px;
+    border: 1px solid var(--Light-Grey);
+}
+
+.languageDropDown {
+    width: 16px;
+    height: 16px;
+    color: var(--Grey);
+}
+
+.languageName {
+    color: var(--Dark-Grey);
+    font-family: "IRANSansX";
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.languageFlag {
+    width: 24px;
+    height: 24px;
+    border-radius: 20px;
+}
+
+.routesContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    padding: 0 8px;
+    width: 50px;
+    height: 50px;
+}
+
+.navLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--Dove-Grey);
+}
+
+.navLink:hover,
+.navLink:focus,
+.navLink:active {
+    text-decoration: none;
+    color: var(--Dove-Grey);
+}
