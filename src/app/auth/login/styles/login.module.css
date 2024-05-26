@@ -154,15 +154,21 @@
 
 .smartvest_description {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 7px;
+    gap: 4px;
     align-self: stretch;
 }
 
 .smartvest {
-    color: #000;
-    font-size: 24px;
+    color: var(--Blue-Primary);
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.subTitle{
+    font-size: 16px;
 }
 
 .linksWrapper {

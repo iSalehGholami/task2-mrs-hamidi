@@ -21,7 +21,8 @@ function Login() {
                 <form className={styles.formContainer}>
                     <div className={styles.infoPiece}>
                         <div className={styles.smartvest_description}>
-                            <div className={styles.smartvest}>اسمارت وست پلتفرمی <span className={styles.safeText}>امن</span></div>
+                            <div className={styles.smartvest}>اسمارت وست</div>
+                            <div className={styles.subTitle}>پلتفرمی امن برای خرید و فروش زمین و املاک شما</div>
                         </div>
                         <div className={styles.lockContainer}>
                             <div className={styles.lockShape}></div>
