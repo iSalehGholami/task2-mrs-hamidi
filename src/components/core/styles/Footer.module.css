@@ -1,0 +1,42 @@
+.footerContainer {
+    width: 100%;
+    background-color: var(--Blue-Primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+}
+
+.socialWrapper {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.socialLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--White);
+}
+
+.socialLinkIcon {
+    width: 40px;
+    height: 40px;
+    color: var(--White);
+}
+
+.social Link:hover,
+.socialLink:focus,
+.socialLink:active {
+    text-decoration: none;
+    color: var(--Black);
+}
+
+.pagesWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
