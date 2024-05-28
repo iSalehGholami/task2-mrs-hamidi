@@ -8,7 +8,7 @@ import {
 } from "iconsax-react";
 
 import lock from "/public/assets/images/lock.png";
-import AuthLayout from '@/view/layout/AuthLayout';
+import AuthLayout from '@/view/layout/AuthLayout';2
 import styles from './style/signup.module.css';
 
 function Signup() {
@@ -23,7 +23,7 @@ function Signup() {
         if (e.key.length === 1 && /\D/.test(e.key)) {
             e.preventDefault();
         }
-    }
+    }``
     return (
         <AuthLayout>
             <div className={styles.main__container}>
