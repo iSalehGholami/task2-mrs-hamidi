@@ -6,7 +6,7 @@ import { DetailedHTMLProps, HTMLAttributes } from "react";
 import styles from "./styles/MainLayout.module.css";
 
 const MainLayout = ({ children }: DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>) => {
-    return <>
+    return <div className={styles.mainLayout}>
         <div className={styles.header}>
             <Navbar />
         </div>
@@ -16,7 +16,7 @@ const MainLayout = ({ children }: DetailedHTMLProps<HTMLAttributes<HTMLElement>,
         <div className={styles.footer}>
             <Footer />
         </div>
-    </>
+    </div>
 };
 
 export default MainLayout;
