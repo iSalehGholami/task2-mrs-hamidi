@@ -1,17 +1,32 @@
-import { ArrowDown, ArrowDown2, ArrowSquareDown, Moon, Profile, SearchNormal } from "iconsax-react";
+import { ArrowDown, ArrowDown2, ArrowSquareDown, Logout, Moon, Profile, SearchNormal } from "iconsax-react";
 import styles from "./styles/Navbar.module.css";
 import Image from "next/image";
 import iranFlag from "/public/assets/icons/iranFlag.svg";
 import Link from "next/link";
 import Logo from "/public/assets/icons/logo.png";
 import Divider from "../widgets/Divider";
+import { MouseEvent } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { logout } from "@/store/userSlice";
+import { RootState } from "@/store/store";
+import { useRouter } from "next/navigation";
+
 
 export default function Navbar() {
+  const loggedIn = useSelector((state: RootState) => state.user.loggedIn);
+  const router = useRouter();
+  const dispatch = useDispatch();
+  function handleLogout(event: MouseEvent<SVGElement>) {
+    dispatch(logout());
+  }
+
   return (
     <div className={styles.navbarContainer}>
       <div className={styles.actionsWrapper}>
         <div className={styles.circleBtn}>
-          <Profile className={styles.circleBtnIcon} />
+          {loggedIn ? <Logout className={styles.circleBtnIcon} onClick={handleLogout} /> :
+            <Profile className={styles.circleBtnIcon} onClick={(e) => router.push("/auth/login")} />
+          }
         </div>
 
         <div className={styles.newAdBtn}>ثبت اگهی جدید</div>
