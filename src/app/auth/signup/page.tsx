@@ -1,15 +1,18 @@
 
 "use client";
-/* eslint-disable jsx-a11y/alt-text */
-import { useState } from 'react';
+
+import { KeyboardEvent, useState } from 'react';
 import Image from 'next/image';
 import {
     Minus, User, Call, Edit2, Google, Lock
 } from "iconsax-react";
 
 import lock from "/public/assets/images/lock.png";
-import AuthLayout from '@/view/layout/AuthLayout';2
+import AuthLayout from '@/view/layout/AuthLayout'; 2
 import styles from './style/signup.module.css';
+import { useDispatch } from 'react-redux';
+import { signup } from '@/store/userSlice';
+import Link from 'next/link';
 
 function Signup() {
     const [name, setName] = useState("");
@@ -19,11 +22,17 @@ function Signup() {
     const [emailAddress, setEmailAddress] = useState("");
     const [password, setPassword] = useState("");
 
-    function handleNationalCode(e: any) {
+    const dispatch = useDispatch();
+
+    function handleNationalCode(e: KeyboardEvent<HTMLInputElement>): void {
         if (e.key.length === 1 && /\D/.test(e.key)) {
             e.preventDefault();
         }
-    }``
+    }
+    const handleSignup = (event: React.MouseEvent<HTMLInputElement>) => {
+        event.preventDefault();
+        dispatch(signup({ name, family, phoneNumber, nationalCode, emailAddress, password }));
+    };
     return (
         <AuthLayout>
             <div className={styles.main__container}>
@@ -84,8 +93,8 @@ function Signup() {
                             </div>
                         </div>
                         <div className={styles.actionButtonWrapper}>
-                            <input type='submit' className={`${styles.button} ${styles.button_sign_up}`} value="ثبت نام" />
-                            <input type='submit' className={`${styles.button} ${styles.button_login}`} value="ورود" />
+                            <input type='submit' onClick={handleSignup} className={`${styles.button} ${styles.button_sign_up}`} value="ثبت نام" />
+                            <Link href={"/auth/login"} type='submit' className={`${styles.button} ${styles.button_login}`}>ورود</Link>
                         </div>
                     </div>
                 </form>
