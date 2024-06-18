@@ -36,6 +36,7 @@
   --Blue-500: #1580DF;
   --Pale-White: #F3F3F3;
   --Black: #000;
+  --Semi-Black: rgba(0,0,0,0.6);
   --Grey: #AEAEAE;
   --Dove-Grey: #666666;
   --Light-Grey: #D8D8D8;
@@ -44,17 +45,17 @@
 }
 
 /* Main selectors */
-
+  
 * {
   /* Default CSS Configuration */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ font-family: 'IranSansXFaNum';
 }
 
 body {
   background: var(--Pale-White);
-  font-family: 'IranSansX';
 }
 
 /* Defining styles */

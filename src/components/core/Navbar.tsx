@@ -7,7 +7,7 @@ import Logo from "/public/assets/icons/logo.png";
 import Divider from "../widgets/Divider";
 import { MouseEvent } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { logout } from "@/store/userSlice";
+import { userActions } from "@/store/userSlice";
 import { RootState } from "@/store/store";
 import { useRouter } from "next/navigation";
 
@@ -17,7 +17,7 @@ export default function Navbar() {
   const router = useRouter();
   const dispatch = useDispatch();
   function handleLogout(event: MouseEvent<SVGElement>) {
-    dispatch(logout());
+    dispatch(userActions.logout());
   }
 
   return (
